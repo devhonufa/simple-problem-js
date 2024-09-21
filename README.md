@@ -24,7 +24,7 @@ console.log(roll_numbers.sort(function(a, b){
 - How can I find out which year is a leap year?
 ```
  function isLeapYear(year){
-  if((year % 400 === 0) || ((year % 4 === 0) && (year % 100 !== 0))){
+  if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)){
     console.log(`${year} is a Leap Year!`);
   }
   else{
@@ -38,4 +38,26 @@ isLeapYear(2026);
 - year % 4 === 0: The year is divisible by 4.
 - year % 100 !== 0: The year is not divisible by 100 (except if divisible by 400).
 - year % 400 === 0: If the year is divisible by 100, it must also be divisible by 400 to be a leap year.
+
+
+### How can we find duplicate numbers in javascript?
+```
+const numbers = [1, 4, 3, 5, 5, 7, 8, 9, 3, 10, 4];
+
+const duplicateNumbers = numbers.filter(function(value, index, array){
+  return array.indexOf(value) !== index
+});
+console.log(duplicateNumbers);
+```
+
+### How can we find unique numbers in Javascript?
+```
+const uniqueNumber = [1, 4, 3, 5, 5, 7, 8, 9, 3, 10, 4];
+
+const uniqueNumbers = uniqueNumber.filter(function(value, index, array) {
+  return array.indexOf(value) === index
+});
+
+console.log(uniqueNumbers);
+```
 
