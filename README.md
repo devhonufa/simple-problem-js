@@ -33,3 +33,9 @@ console.log(roll_numbers.sort(function(a, b){
 }
 isLeapYear(2026);
 ```
+### Leap Year Logic:
+
+- year % 4 === 0: The year is divisible by 4.
+- year % 100 !== 0: The year is not divisible by 100 (except if divisible by 400).
+- year % 400 === 0: If the year is divisible by 100, it must also be divisible by 400 to be a leap year.
+
