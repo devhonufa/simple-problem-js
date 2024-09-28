@@ -1,3 +1,24 @@
+### //find are smallNums
+```
+let smallNum = [5, 2, 3, 8, 5];
+
+rollNum.sort(function(a, b){
+  return a-b;
+})
+console.log(smallNum);
+```
+
+### //find are bigNumbers
+
+```
+let bigNumber = [3, 5, 8, 2, 4, 1];
+bigNumber.sort(function(a, b){
+  return b - a;
+})
+console.log(bigNumber);
+```
+
+
 - Function to generate a random number between 1 and 6
 ```
 function rollRanNum() {
